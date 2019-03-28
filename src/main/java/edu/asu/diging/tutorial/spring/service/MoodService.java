@@ -42,4 +42,10 @@ public class MoodService implements MoodServiceInterface {
 		
 		return mood;
 	}
+
+	@Override
+	public String getExplanation(String mood) {
+		
+		return reasonMap.get(mood);
+	}
 }

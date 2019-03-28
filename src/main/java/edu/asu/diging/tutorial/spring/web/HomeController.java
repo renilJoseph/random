@@ -18,12 +18,10 @@ public class HomeController {
 	@Autowired
 	MoodServiceInterface service;
 	
-	
-	
 	@RequestMapping(value = "/")
 	public String home(ModelMap map) {
 		map.addAttribute("mood", service.getCurrentMood());
-		return "index2";
+		return "home";
 	}
 	
 	@RequestMapping(value = "/reason", method = RequestMethod.GET)

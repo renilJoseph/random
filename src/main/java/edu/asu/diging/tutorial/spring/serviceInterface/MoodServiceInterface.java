@@ -9,4 +9,6 @@ public interface MoodServiceInterface {
 	public Mood getCurrentMood();
 	
 	public Mood getWhy(String moodVal);
+	
+	public String getExplanation(String mood);
 }
